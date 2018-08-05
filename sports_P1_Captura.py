@@ -34,9 +34,16 @@ import re
 # b) Load dataset
 
 teams = pd.read_csv(r"C:\Users\Chuseta\Documents\Xavi\Big Data\Challenge\SportsAnalytics\Datasets\Stage1\DataFiles\Teams.csv")
+
+#con estos conjuntos de datos construiremos variable rating de cada equipo
 reg_season = pd.read_csv(r"C:\Users\Chuseta\Documents\Xavi\Big Data\Challenge\SportsAnalytics\Datasets\Stage1\DataFiles\RegularSeasonCompactResults.csv") 
+massey = pd.read_csv(r"C:\Users\Chuseta\Documents\Xavi\Big Data\Challenge\SportsAnalytics\Datasets\Stage1\DataFiles\MasseyOrdinals.csv") 
+
+#con estos conjuntos de datos intentaremos construir el modelo aprovechando el rating calculado
+tourney_seeds = pd.read_csv(r"C:\Users\Chuseta\Documents\Xavi\Big Data\Challenge\SportsAnalytics\Datasets\Stage1\DataFiles\NCAATourneySeeds.csv") 
+tourney_results = pd.read_csv(r"C:\Users\Chuseta\Documents\Xavi\Big Data\Challenge\SportsAnalytics\Datasets\Stage1\DataFiles\NCAATourneyCompactResults.csv") 
 
 # Revisar datos leidos
 teams.head()
 reg_season.head()
-
+tourney_seeds.head(20)
